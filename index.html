@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title> 🇸🇬 9/24-9/29 SG </title>
+    <title>🇸🇬 9/24-9/29 SG</title>
     <style>
         /* 載入文青感清新字體 */
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Quicksand:wght@500;600&display=swap');
@@ -94,6 +94,17 @@
             gap: 6px;
             border-bottom: 1px solid var(--border);
             padding-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .time-badge {
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: var(--text-muted);
+            background-color: var(--primary-light);
+            padding: 2px 8px;
+            border-radius: 6px;
+            margin-left: auto;
         }
 
         /* Day Selector for Itinerary */
@@ -292,22 +303,12 @@
         .nav-item.active .nav-icon {
             opacity: 1;
         }
-
-        .badge-important {
-            background-color: #e57373;
-            color: white;
-            font-size: 0.7rem;
-            padding: 1px 5px;
-            border-radius: 4px;
-            margin-left: 6px;
-            font-weight: 500;
-        }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <h1 id="header-title"> 🇸🇬 9/24-9/29 SG </h1>
+        <h1 id="header-title">🇲🇬 9/24-9/29 SG</h1>
     </div>
 
     <div class="container">
@@ -329,30 +330,25 @@
                     <div class="card-title">📍 Day 1 抵達與達士敦文青漫步</div>
                     <div class="timeline-item">
                         <div class="time">09:25 - 13:55</div>
-                        <div class="event-title">✈️ 長榮航空 BR215 啟航</div>
-                        <div class="event-desc">桃園國際機場出發，抵達新加坡樟宜機場。</div>
+                        <div class="event-title">✈️ BR215</div>
+                        <div class="event-desc">從桃園國際機場出發，抵達新加坡樟宜機場。</div>
                     </div>
                     <div class="timeline-item">
                         <div class="time">14:00 - 15:30</div>
-                        <div class="event-title">🚕 樟宜機場 ➔ 飯店</div>
-                        <div class="event-desc">入境後直接搭乘 Grab 前往達士敦山飯店（約25分鐘）。</div>
+                        <div class="event-title">🚕 Grab</div>
+                        <div class="event-desc">入境後搭乘 Grab 前往 Mondrian Singapore Duxton。</div>
                     </div>
                     <div class="timeline-item">
-                        <div class="time">15:30 - 16:30</div>
-                        <div class="event-title">🏨 飯店 Check-in 休息</div>
-                        <div class="event-desc">Mondrian Singapore Duxton 辦理入住、放置行李。</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time">16:30 - 18:00</div>
-                        <div class="event-title">☕ Nylon Coffee Roasters</div>
-                        <div class="event-desc">步行前往附近的極高品質精品咖啡廳，享受悠閒的午後達士敦歐風街區氛圍。</div>
-                        <a href="https://maps.google.com/?q=Nylon+Coffee+Roasters+Singapore" target="_blank" class="btn-map">🗺️ 地圖導航</a>
+                        <div class="time">15:30 - 18:30</div>
+                        <div class="event-title">🏨 Mondrian Singapore Duxton</div>
+                        <div class="event-desc">辦理 Check-in 入住並放置行李，隨後前往周邊的 Duxton Hill 街區悠閒漫步，享受慢節奏的晨昏光景並等待晚餐。</div>
+                        <a href="https://maps.google.com/?q=Mondrian+Singapore+Duxton" target="_blank" class="btn-map">🗺️ 地圖導航</a>
                     </div>
                     <div class="timeline-item">
                         <div class="time">18:30 - 20:30</div>
-                        <div class="event-title">🍛 晚餐：阿仔海南雞飯 / 國府珍寶火鍋</div>
-                        <div class="event-desc">步行前往麥士威熟食中心吃道地海南雞飯，或吃高質感國府火鍋。吃飽可在牛車水散步後回飯店。</div>
-                        <a href="https://maps.google.com/?q=Maxwell+Food+Centre+Singapore" target="_blank" class="btn-map">🗺️ 麥士威地圖</a>
+                        <div class="event-title">🍛 Maxwell Food Centre</div>
+                        <div class="event-desc">前往 Maxwell Food Centre 享用道地海南雞飯，或吃高質感的國府珍寶火鍋。吃飽後可在 Chinatown 散步再返回飯店。</div>
+                        <a href="https://maps.google.com/?q=Maxwell+Food+Centre+Singapore" target="_blank" class="btn-map">🗺️ 地圖導航</a>
                     </div>
                 </div>
             </div>
@@ -360,50 +356,50 @@
             <!-- Day 2 -->
             <div id="day-2-content" class="day-section" style="display:none;">
                 <div class="card">
-                    <div class="card-title">📍 Day 2 ROM 婚姻登記重要任務日 <span class="badge-important">重要</span></div>
+                    <div class="card-title">📍 Day 2 ROM 婚姻登記任務日</div>
                     <div class="timeline-item">
                         <div class="time">08:15 - 08:45</div>
-                        <div class="event-title">🚕 前往婚姻註冊局</div>
-                        <div class="event-desc">搭乘 Grab 前往新加坡婚姻註冊局（ROM）。</div>
+                        <div class="event-title">🚕 Grab</div>
+                        <div class="event-desc">搭乘 Grab 前往 Registry of Marriages。</div>
                     </div>
                     <div class="timeline-item">
                         <div class="time">09:00 - 11:30</div>
-                        <div class="event-title">📜 ROM 早上送件辦理</div>
-                        <div class="event-desc">親自送件登記，完成重要申辦流程。</div>
-                        <a href="https://maps.google.com/?q=Registry+of+Marriages+Singapore" target="_blank" class="btn-map">🗺️ ROM 地圖</a>
+                        <div class="event-title">📜 Registry of Marriages</div>
+                        <div class="event-desc">親自前往 Registry of Marriages 送件登記，完成重要申辦流程。</div>
+                        <a href="https://maps.google.com/?q=Registry+of+Marriages+Singapore" target="_blank" class="btn-map">🗺️ 地圖導航</a>
                     </div>
                     <div class="timeline-item">
                         <div class="time">11:30 - 12:30</div>
-                        <div class="event-title">🌳 福康寧公園散步</div>
-                        <div class="event-desc">就在 ROM 隔壁！散步前往歷史古蹟，尋找著名的地下螺旋梯綠色天窗奇景。</div>
-                        <a href="https://maps.google.com/?q=Fort+Canning+Tree+Tunnel" target="_blank" class="btn-map">🗺️ 螺旋梯地圖</a>
+                        <div class="event-title">🌳 Fort Canning Park</div>
+                        <div class="event-desc">步行前往鄰近的 Fort Canning Park 散步，尋找著名的 Fort Canning Tree Tunnel 綠色天窗奇景。</div>
+                        <a href="https://maps.google.com/?q=Fort+Canning+Tree+Tunnel" target="_blank" class="btn-map">🗺️ 地圖導航</a>
                     </div>
                     <div class="timeline-item">
                         <div class="time">12:45 - 14:15</div>
-                        <div class="event-title">🍚 午餐：金鞋區海南雞飯</div>
-                        <div class="event-desc">搭乘捷運或 Grab 前往在地人大推的正宗金鞋區海南雞飯。</div>
-                        <a href="https://maps.google.com/?q=Market+Street+CapitaSpring+Singapore" target="_blank" class="btn-map">🗺️ 金鞋區地圖</a>
+                        <div class="event-title">🍚 Market Street CapitaSpring</div>
+                        <div class="event-desc">前往 Market Street CapitaSpring 享用在地人推薦的正宗海南雞飯。</div>
+                        <a href="https://maps.google.com/?q=Market+Street+CapitaSpring+Singapore" target="_blank" class="btn-map">🗺️ 地圖導航</a>
                     </div>
                     <div class="timeline-item">
                         <div class="time">14:30 - 15:15</div>
-                        <div class="event-title">☕ 下午茶：讚美廣場 CHIJMES</div>
-                        <div class="event-desc">在極具風格的百年教堂建築群中喝茶，稍作休息。</div>
-                        <a href="https://maps.google.com/?q=CHIJMES+Singapore" target="_blank" class="btn-map">🗺️ 讚美廣場地圖</a>
+                        <div class="event-title">☕ CHIJMES</div>
+                        <div class="event-desc">在極具歷史風格的 CHIJMES 百年建築群中享用茶點，稍作休息。</div>
+                        <a href="https://maps.google.com/?q=CHIJMES+Singapore" target="_blank" class="btn-map">🗺️ 地圖導航</a>
                     </div>
                     <div class="timeline-item">
                         <div class="time">15:30 - 16:00</div>
-                        <div class="event-title">📜 ROM 取件成功！</div>
-                        <div class="event-desc">準時回到婚姻註冊局取件，順利完成所有官方手續。</div>
+                        <div class="event-title">📜 Registry of Marriages (取件)</div>
+                        <div class="event-desc">準時回到 Registry of Marriages 取件，順利完成所有官方手續。</div>
                     </div>
                     <div class="timeline-item">
                         <div class="time">16:30 - 18:30</div>
-                        <div class="event-title">🛍️ 烏節路散步 + Mr. Coconut</div>
-                        <div class="event-desc">逛逛高級商場，人手一杯超清爽的必喝 Mr. Coconut 椰子奶昔。</div>
+                        <div class="event-title">🛍️ Orchard Road & Mr. Coconut</div>
+                        <div class="event-desc">前往 Orchard Road 漫步逛街，並購買一杯必喝的 Mr. Coconut 椰子奶昔。</div>
                     </div>
                     <div class="timeline-item">
                         <div class="time">19:00 - 21:00</div>
-                        <div class="event-title">🥩 晚餐：松發肉骨茶</div>
-                        <div class="event-desc">於烏節中心店享用熱騰騰、胡椒香氣十足的招牌肉骨茶（湯頭無限續）。</div>
+                        <div class="event-title">🥩 Song Fa Bak Kut Teh</div>
+                        <div class="event-desc">於 Song Fa Bak Kut Teh 烏節中心店享用熱騰騰、胡椒香氣十足的招牌肉骨茶。</div>
                     </div>
                 </div>
             </div>
@@ -411,28 +407,28 @@
             <!-- Day 3 -->
             <div id="day-3-content" class="day-section" style="display:none;">
                 <div class="card">
-                    <div class="card-title">📍 Day 3 聖淘東全新海洋盛宴與海灘放空</div>
+                    <div class="card-title">📍 Day 3 聖淘沙海洋盛宴與海灘放空</div>
                     <div class="timeline-item">
                         <div class="time">09:30 - 10:00</div>
-                        <div class="event-title">🚡 前往聖淘沙島</div>
-                        <div class="event-desc">搭乘 Grab 或搭地鐵轉乘聖淘沙快線入島。</div>
+                        <div class="event-title">🚡 Sentosa Express</div>
+                        <div class="event-desc">搭乘 Grab 或搭乘地鐵至 HarbourFront 轉乘 Sentosa Express 入島。</div>
                     </div>
                     <div class="timeline-item">
                         <div class="time">10:00 - 14:30</div>
-                        <div class="event-title">🦈 全新新加坡海洋館 (Singapore Oceanarium)</div>
-                        <div class="event-desc">參觀全新擴建完工的頂級海洋館，觀賞深海生態與數位沉浸展示。午餐直接在園區內享用。</div>
-                        <a href="https://maps.google.com/?q=S.E.A.+Aquarium+Singapore" target="_blank" class="btn-map">🗺️ 海洋館地圖</a>
+                        <div class="event-title">🦈 S.E.A. Aquarium</div>
+                        <div class="event-desc">參觀 S.E.A. Aquarium 觀賞深海生態與數位沉浸展示，午餐直接在園區內享用。</div>
+                        <a href="https://maps.google.com/?q=S.E.A.+Aquarium+Singapore" target="_blank" class="btn-map">🗺️ 地圖導航</a>
                     </div>
                     <div class="timeline-item">
                         <div class="time">14:30 - 17:30</div>
-                        <div class="event-title">🏖️ 西樂索海灘沙灘俱樂部放空</div>
-                        <div class="event-desc">前往 Rumours Beach Club，點杯涼飲、聽海風音樂，享受純粹的海島悠閒度假感。</div>
-                        <a href="https://maps.google.com/?q=Siloso+Beach+Singapore" target="_blank" class="btn-map">🗺️ 海灘地圖</a>
+                        <div class="event-title">🏖️ Siloso Beach & Rumours Beach Club</div>
+                        <div class="event-desc">前往 Siloso Beach 的 Rumours Beach Club，點杯飲料聆聽海風音樂，享受純粹的海島度假氛圍。</div>
+                        <a href="https://maps.google.com/?q=Siloso+Beach+Singapore" target="_blank" class="btn-map">🗺️ 地圖導航</a>
                     </div>
                     <div class="timeline-item">
                         <div class="time">18:00 - 20:00</div>
-                        <div class="event-title">🍽️ 晚餐：聖淘沙怡豐城 VivoCity</div>
-                        <div class="event-desc">出島至怡豐城享用精緻新加坡料理，隨後搭車返回飯店。</div>
+                        <div class="event-title">🍽️ VivoCity</div>
+                        <div class="event-desc">出島至 VivoCity 享用精緻新加坡料理，隨後返回飯店。</div>
                     </div>
                 </div>
             </div>
@@ -443,30 +439,30 @@
                     <div class="card-title">📍 Day 4 濱海灣數位藝術與絕美夜景</div>
                     <div class="timeline-item">
                         <div class="time">10:00 - 12:00</div>
-                        <div class="event-title">🥐 質感早午餐</div>
-                        <div class="event-desc">在飯店周邊的 Duxton Hill 網美咖啡廳享受不設限的晨間時光。</div>
+                        <div class="event-title">🥐 Duxton Hill</div>
+                        <div class="event-desc">在 Mondrian Singapore Duxton 周邊的 Duxton Hill 質感咖啡廳享受不設限的晨間時光。</div>
                     </div>
                     <div class="timeline-item">
                         <div class="time">12:30 - 15:30</div>
-                        <div class="event-title">🖼️ 藝術科學博物館 ArtScience Museum</div>
-                        <div class="event-desc">搭地鐵前往濱海灣，參觀極具當代設計感的國際跨界展覽。</div>
-                        <a href="https://maps.google.com/?q=ArtScience+Museum+Singapore" target="_blank" class="btn-map">🗺️ 博物館地圖</a>
+                        <div class="event-title">🖼️ ArtScience Museum</div>
+                        <div class="event-desc">搭乘地鐵前往 Marina Bay，參觀極具當代設計感的 ArtScience Museum 國際跨界展覽。</div>
+                        <a href="https://maps.google.com/?q=ArtScience+Museum+Singapore" target="_blank" class="btn-map">🗺️ 地圖導航</a>
                     </div>
                     <div class="timeline-item">
                         <div class="time">16:00 - 18:30</div>
-                        <div class="event-title">🌳 濱海灣花園 + IMBA Theatre 數位劇場</div>
-                        <div class="event-desc">體驗最新的多感官數位沉浸展，隨後漫步花穹與雲霧林冷室。</div>
-                        <a href="https://maps.google.com/?q=Gardens+by+the+Bay+Singapore" target="_blank" class="btn-map">🗺️ 濱海灣花園地圖</a>
+                        <div class="event-title">🌳 Gardens by the Bay</div>
+                        <div class="event-desc">漫步 Gardens by the Bay，體驗最新多感官沉浸展並參觀花穹與雲霧林冷室。</div>
+                        <a href="https://maps.google.com/?q=Gardens+by+the+Bay+Singapore" target="_blank" class="btn-map">🗺️ 地圖導航</a>
                     </div>
                     <div class="timeline-item">
                         <div class="time">19:00 - 20:30</div>
-                        <div class="event-title">🍽️ 晚餐：金沙購物商城名廚餐廳</div>
-                        <div class="event-desc">在金沙商城內享用高級精緻晚餐。</div>
+                        <div class="event-title">🍽️ The Shoppes at Marina Bay Sands</div>
+                        <div class="event-desc">在 The Shoppes at Marina Bay Sands 內的名廚餐廳享用精緻晚餐。</div>
                     </div>
                     <div class="timeline-item">
                         <div class="time">20:45 - 21:15</div>
-                        <div class="event-title">✨ 金沙「幻彩詠香江」水舞秀</div>
-                        <div class="event-desc">於戶外親水平台觀賞壯麗的水舞與燈光秀，畫下完美句點。</div>
+                        <div class="event-title">✨ Spectra - A Light & Water Show</div>
+                        <div class="event-desc">於戶外親水平台觀賞壯麗的 Spectra 水舞燈光秀，畫下完美句點。</div>
                     </div>
                 </div>
             </div>
@@ -474,35 +470,41 @@
             <!-- Day 5 -->
             <div id="day-5-content" class="day-section" style="display:none;">
                 <div class="card">
-                    <div class="card-title">📍 Day 5 異國風情、頂級 Queic 起司蛋糕</div>
+                    <div class="card-title">📍 Day 5 異國風情與午後精品甜點咖啡</div>
                     <div class="timeline-item">
                         <div class="time">10:00 - 12:00</div>
-                        <div class="event-title">🕌 甘榜格南 & 哈芝巷</div>
-                        <div class="event-desc">漫步彩色壁畫、文青小店與中東風情街道。</div>
-                        <a href="https://maps.google.com/?q=Haji+Lane+Singapore" target="_blank" class="btn-map">🗺️ 哈芝巷地圖</a>
+                        <div class="event-title">🕌 Kampong Gelam & Haji Lane</div>
+                        <div class="event-desc">漫步 Kampong Gelam 區，欣賞彩色壁畫並逛逛 Haji Lane 的文青小店與中東風情街道。</div>
+                        <a href="https://maps.google.com/?q=Haji+Lane+Singapore" target="_blank" class="btn-map">🗺️ 地圖導航</a>
                     </div>
                     <div class="timeline-item">
                         <div class="time">12:30 - 14:30</div>
-                        <div class="event-title">🍛 午餐：麥士威熟食中心</div>
-                        <div class="event-desc">大啖天天海南雞飯與在地多種經典星國小吃。</div>
+                        <div class="event-title">🍛 Maxwell Food Centre</div>
+                        <div class="event-desc">返回 Maxwell Food Centre 大啖天天海南雞飯與在地多種經典小吃。</div>
                     </div>
                     <div class="timeline-item">
-                        <div class="time">14:45 - 16:30</div>
-                        <div class="event-title">🍰 Queic by Olivia 流心起司蛋糕</div>
-                        <div class="event-desc">就在飯店附近！品嚐全新加坡最濃郁、入口即化的傳奇招牌起司蛋糕。</div>
-                        <a href="https://maps.google.com/?q=Queic+by+Olivia+Singapore" target="_blank" class="btn-map">🗺️ Queic 地圖</a>
+                        <div class="time">14:45 - 15:30</div>
+                        <div class="event-title">🍰 Queic by Olivia <span class="time-badge">11:00-19:00</span></div>
+                        <div class="event-desc">前往飯店附近的 Queic by Olivia，品嚐極具盛名、入口即化的傳奇流心起司蛋糕。</div>
+                        <a href="https://maps.google.com/?q=Queic+by+Olivia+Singapore" target="_blank" class="btn-map">🗺️ 地圖導航</a>
                     </div>
                     <div class="timeline-item">
-                        <div class="time">17:00 - 19:30</div>
-                        <div class="event-title">🛍️ 福南商場 Funan 質感購物</div>
-                        <div class="event-desc">前往極具科技感的複合式商場，享受無預算限制的悠閒好逛時光。</div>
-                        <a href="https://maps.google.com/?q=Funan+Singapore" target="_blank" class="btn-map">🗺️ 福南商場地圖</a>
+                        <div class="time">15:30 - 16:00</div>
+                        <div class="event-title">☕ Nylon Coffee Roasters <span class="time-badge">08:30-16:00</span></div>
+                        <div class="event-desc">步行前往附近的 Nylon Coffee Roasters 享受一杯極高品質的精品手沖咖啡。</div>
+                        <a href="https://maps.google.com/?q=Nylon+Coffee+Roasters+Singapore" target="_blank" class="btn-map">🗺️ 地圖導航</a>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">16:30 - 19:30</div>
+                        <div class="event-title">🛍️ Funan</div>
+                        <div class="event-desc">前往極具科技感的複合式商場 Funan，享受無預算限制的質感購物時光。</div>
+                        <a href="https://maps.google.com/?q=Funan+Singapore" target="_blank" class="btn-map">🗺️ 地圖導航</a>
                     </div>
                     <div class="timeline-item">
                         <div class="time">20:00 - 22:00</div>
-                        <div class="event-title">🍢 晚餐：老巴剎熟食中心沙嗲街</div>
-                        <div class="event-desc">坐在戶外封街的露天沙嗲條，體驗烤串、冰啤酒與南洋晚風的熱鬧氣氛。</div>
-                        <a href="https://maps.google.com/?q=Lau+Pa+Sat+Singapore" target="_blank" class="btn-map">🗺️ 老巴剎地圖</a>
+                        <div class="event-title">🍢 Lau Pa Sat</div>
+                        <div class="event-desc">坐在 Lau Pa Sat 封街的露天沙嗲街，體驗烤串、冰啤酒與南洋晚風的熱鬧氣氛。</div>
+                        <a href="https://maps.google.com/?q=Lau+Pa+Sat+Singapore" target="_blank" class="btn-map">🗺️ 地圖導航</a>
                     </div>
                 </div>
             </div>
@@ -513,24 +515,24 @@
                     <div class="card-title">📍 Day 6 星耀樟宜與完美歸賦</div>
                     <div class="timeline-item">
                         <div class="time">09:30 - 10:00</div>
-                        <div class="event-title">🏨 退房 ➔ 樟宜機場</div>
-                        <div class="event-desc">辦理退房，搭乘 Grab 直奔機場（提早三小時抵達）。</div>
+                        <div class="event-title">🏨 Mondrian Singapore Duxton ➔ Changi Airport</div>
+                        <div class="event-desc">辦理退房，搭乘 Grab 前往 Changi Airport（提早三小時抵達）。</div>
                     </div>
                     <div class="timeline-item">
                         <div class="time">10:00 - 12:00</div>
-                        <div class="event-title">🌊 星耀樟宜 Jewel Changi 雨漩渦</div>
-                        <div class="event-desc">朝聖全球最高室內瀑布，順道在週邊進行伴手禮的最終採買。</div>
-                        <a href="https://maps.google.com/?q=Jewel+Changi+Airport+Singapore" target="_blank" class="btn-map">🗺️ 星耀樟宜地圖</a>
+                        <div class="event-title">🌊 Jewel Changi Airport</div>
+                        <div class="event-desc">朝聖 Jewel Changi Airport 世界最高的室內瀑布雨漩渦，並在週邊進行伴手禮的最終採買。</div>
+                        <a href="https://maps.google.com/?q=Jewel+Changi+Airport+Singapore" target="_blank" class="btn-map">🗺️ 地圖導航</a>
                     </div>
                     <div class="timeline-item">
                         <div class="time">12:00 - 13:10</div>
-                        <div class="event-title">✈️ 機場辦理登機</div>
-                        <div class="event-desc">前往第二航廈長榮航空櫃檯託運行李、通關。</div>
+                        <div class="event-title">✈️ Changi Airport Terminal 2</div>
+                        <div class="event-desc">前往第二航廈辦理行李託運與通關手續。</div>
                     </div>
                     <div class="timeline-item">
                         <div class="time">13:10 - 17:45</div>
-                        <div class="event-title">✈️ 長榮航空 BR226 返回台灣</div>
-                        <div class="event-desc">搭機返回桃園國際機場，滿載甜蜜回憶順利返家。</div>
+                        <div class="event-title">✈️ BR226</div>
+                        <div class="event-desc">搭乘 BR226 返回桃園國際機場，滿載甜蜜回憶順利返家。</div>
                     </div>
                 </div>
             </div>
@@ -540,20 +542,20 @@
         <div id="tab-transport" class="tab-content">
             <div class="card">
                 <div class="card-title">✈️ 航班資訊</div>
-                <div class="info-row"><span class="info-label">去程航班</span><span class="info-value">長榮航空 BR215</span></div>
+                <div class="info-row"><span class="info-label">去程航班</span><span class="info-value">BR215</span></div>
                 <div class="info-row"><span class="info-label">去程時間</span><span class="info-value">9/24 (四) 09:25 - 13:55</span></div>
-                <div class="info-row"><span class="info-label">回程航班</span><span class="info-value">長榮航空 BR226</span></div>
+                <div class="info-row"><span class="info-label">回程航班</span><span class="info-value">BR226</span></div>
                 <div class="info-row"><span class="info-label">回程時間</span><span class="info-value">9/29 (二) 13:10 - 17:45</span></div>
             </div>
             <div class="card">
-                <div class="card-title">🚇 當地交通方式</div>
+                <div class="card-title">🚇 当地交通方式</div>
                 <div class="timeline-item">
-                    <div class="event-title"> Grab 叫車 App</div>
-                    <div class="event-desc">適合往返機場、聖淘沙、或腳痠時機動使用。新加坡叫車極度方便快速。</div>
+                    <div class="event-title"> Grab</div>
+                    <div class="event-desc">適合往返機場、Sentosa、或行程銜接時機動使用。</div>
                 </div>
                 <div class="timeline-item">
-                    <div class="event-title"> MRT 地鐵 / 巴士</div>
-                    <div class="event-desc">市區景點靠捷運極快，直接刷海外信用卡或 Apple Pay 即可過閘門。</div>
+                    <div class="event-title"> MRT</div>
+                    <div class="event-desc">市區景點搭乘 MRT 極為便利，可直接刷海外信用卡或 Apple Pay 過閘門。</div>
                 </div>
             </div>
         </div>
@@ -569,7 +571,7 @@
                 <div class="info-row"><span class="info-label">入住日期</span><span class="info-value">9/24 (四) 入住</span></div>
                 <div class="info-row"><span class="info-label">退房日期</span><span class="info-value">9/29 (二) 退房 (5晚)</span></div>
                 <div class="info-row"><span class="info-label">飯店地址</span><span class="info-value">16A Duxton Hill, Singapore 089970</span></div>
-                <div class="info-row"><span class="info-label">生活機能</span><span class="info-value">步行即可達麥士威熟食中心、Queic 蛋糕、文青咖啡廳街區</span></div>
+                <div class="info-row"><span class="info-label">生活機能</span><span class="info-value">步行即可達 Maxwell Food Centre、Queic by Olivia、Duxton Hill 文青街區</span></div>
                 <div style="margin-top: 15px; text-align: center;">
                     <a href="https://maps.google.com/?q=Mondrian+Singapore+Duxton" target="_blank" class="btn-map" style="width: 100%; justify-content: center; padding: 10px;">🗺️ 打開導航前往飯店</a>
                 </div>
@@ -582,18 +584,9 @@
                 <div class="card-title">🚨 必帶重要文件</div>
                 <ul class="check-list">
                     <li>中華民國護照 (效期6個月以上)</li>
-                    <li><strong>新加坡 ROM 預約登記確認信與所有證明文件正本</strong></li>
+                    <li><strong>新加坡 Registry of Marriages 預約登記確認信與所有證明文件正本</strong></li>
                     <li>出發前3天內填寫完畢的 SG Arrival Card 電子入境卡</li>
                     <li>海外刷卡高回饋信用卡 / 已綁定 Apple Pay 手機</li>
-                </ul>
-            </div>
-            <div class="card">
-                <div class="card-title">💡 溫馨提醒</div>
-                <ul class="check-list">
-                    <li>新加坡室內與 ROM 冷氣極強，建議攜帶一件薄外套。</li>
-                    <li>萬國轉接頭 (新加坡為英規三腳插頭)。</li>
-                    <li>建議在台灣先設定好 eSIM 網路，通關即可直接使用。</li>
-                    <li>熟食中心仍需少量現金，建議現場準備約 SGD 100 現金備用。</li>
                 </ul>
             </div>
         </div>
@@ -636,7 +629,7 @@
             // Update Header Title
             const mainHeaderTitle = document.getElementById('header-title');
             if(tabId === 'schedule') {
-                mainHeaderTitle.innerText = "🇸🇬9/24-9/29 新加坡 6天五夜";
+                mainHeaderTitle.innerText = "🇸🇬 9/24-9/29 SG";
             } else if(tabId === 'transport') {
                 mainHeaderTitle.innerText = "✈️ 交通方式與航班";
             } else if(tabId === 'hotel') {
