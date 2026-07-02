@@ -6,10 +6,10 @@
     <title>新加坡 6天5夜 專屬行程 App</title>
     <style>
         :root {
-            --primary: #0f4c3a;
-            --primary-light: #e6f0ec;
-            --accent: #e2a04e;
-            --bg: #f8f9fa;
+            --primary: #2b6cb0;
+            --primary-light: #ebf8ff;
+            --accent: #ed8936;
+            --bg: #f7fafc;
             --card-bg: #ffffff;
             --text: #2d3748;
             --text-muted: #718096;
@@ -32,13 +32,13 @@
         }
 
         .header {
-            background: linear-gradient(135deg, var(--primary) 0%, #1a6d54 100%);
+            background: linear-gradient(135deg, #3182ce 0%, #63b3ed 100%);
             color: white;
             padding: 25px 20px;
             text-align: center;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(49, 130, 206, 0.2);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -127,7 +127,7 @@
             background-color: var(--primary);
             color: white;
             border-color: var(--primary);
-            box-shadow: 0 2px 6px rgba(15,76,58,0.3);
+            box-shadow: 0 2px 6px rgba(43, 108, 176, 0.3);
         }
 
         /* Timeline Styles */
@@ -201,7 +201,7 @@
             transition: background-color 0.2s;
         }
         .btn-map:active {
-            background-color: #d2e5df;
+            background-color: #bee3f8;
         }
 
         /* Info Item Rows */
@@ -266,7 +266,7 @@
             font-size: 0.75rem;
             font-weight: 500;
             text-decoration: none;
-            width: 20%;
+            width: 25%;
             height: 100%;
             cursor: pointer;
             transition: color 0.2s;
@@ -306,7 +306,7 @@
         <div id="tab-schedule" class="tab-content active">
             <div class="day-selector">
                 <button class="day-btn active" onclick="switchDay(1)">D1 (9/24)</button>
-                <button class="day-btn" onclick="switchDay(2)">D2 (9/25) 💍</button>
+                <button class="day-btn" onclick="switchDay(2)">D2 (9/25)</button>
                 <button class="day-btn" onclick="switchDay(3)">D3 (9/26)</button>
                 <button class="day-btn" onclick="switchDay(4)">D4 (9/27)</button>
                 <button class="day-btn" onclick="switchDay(5)">D5 (9/28)</button>
@@ -539,11 +539,11 @@
                 <div class="card-title">🚇 當地交通方式</div>
                 <div class="timeline-item">
                     <div class="event-title"> Grab 叫車 App</div>
-                    <div class="event-desc">適合往返機場、聖淘沙、或腳酸時機動使用。新加坡叫車極度方便快速。</div>
+                    <div class="event-desc">適合往返機場、聖淘沙、或腳痠時機動使用。新加坡叫車極度方便快速。</div>
                 </div>
                 <div class="timeline-item">
                     <div class="event-title"> MRT 地鐵 / 巴士</div>
-                    <div class="event-desc">市區景點（如烏節路、濱海灣、哈芝巷）靠捷運極快，直接刷海外信用卡或 Apple Pay 即可過閘門。</div>
+                    <div class="event-desc">市區景點靠捷運極快，直接刷海外信用卡或 Apple Pay 即可過閘門。</div>
                 </div>
             </div>
         </div>
@@ -566,7 +566,7 @@
             </div>
         </div>
 
-        <!-- TAB 4: 行李 -->
+        <!-- TAB 4: 行程須知 -->
         <div id="tab-packing" class="tab-content">
             <div class="card">
                 <div class="card-title">🚨 必帶重要文件</div>
@@ -578,27 +578,13 @@
                 </ul>
             </div>
             <div class="card">
-                <div class="card-title">🧳 隨身行李清單</div>
+                <div class="card-title">💡 溫馨提醒</div>
                 <ul class="check-list">
-                    <li>舒適休閒服飾、好走路的慢跑鞋或休閒鞋</li>
-                    <li>薄外衣 / 薄外套 (新加坡室內與 ROM 冷氣極強)</li>
-                    <li>防曬用品 (墨鏡、防曬乳、陽傘)</li>
-                    <li>萬國轉接頭 (新加坡為英規三腳插頭)</li>
-                    <li>eSIM 網路設定完成</li>
+                    <li>新加坡室內與 ROM 冷氣極強，建議攜帶一件薄外套。</li>
+                    <li>萬國轉接頭 (新加坡為英規三腳插頭)。</li>
+                    <li>建議在台灣先設定好 eSIM 網路，通關即可直接使用。</li>
+                    <li>熟食中心仍需少量現金，建議現場準備約 SGD 100 現金備用。</li>
                 </ul>
-            </div>
-        </div>
-
-        <!-- TAB 5: 預算 -->
-        <div id="tab-budget" class="tab-content">
-            <div class="card">
-                <div class="card-title">💰 費用與換匯方針</div>
-                <div style="background-color: var(--primary-light); padding: 12px; border-radius: 8px; font-weight: 600; color: var(--primary); text-align: center; margin-bottom: 15px;">
-                    ✨ 宗旨：好玩就好，無上限質感享樂！
-                </div>
-                <div class="info-row"><span class="info-label">大眾運輸 / 餐廳 / 購物</span><span class="info-value">100% 全面支援信用卡與 Apple Pay</span></div>
-                <div class="info-row"><span class="info-label">在地熟食中心 (麥士威/老巴剎)</span><span class="info-value">需用現金，建議準備 SGD 100-150 現金</span></div>
-                <div class="info-row"><span class="info-label">計程車交通 (Grab)</span><span class="info-value">直接於 App 內綁定信用卡扣款</span></div>
             </div>
         </div>
 
@@ -619,12 +605,8 @@
             <span>住宿資訊</span>
         </div>
         <div class="nav-item" onclick="switchTab('packing', this)">
-            <span class="nav-icon">🧳</span>
-            <span>行前行李</span>
-        </div>
-        <div class="nav-item" onclick="switchTab('budget', this)">
-            <span class="nav-icon">💰</span>
-            <span>費用換匯</span>
+            <span class="nav-icon">💡</span>
+            <span>行程須知</span>
         </div>
     </div>
 
@@ -646,8 +628,7 @@
                 'schedule': '新加坡 6天5夜 行程',
                 'transport': '交通方式與航班',
                 'hotel': '住宿與周邊指南',
-                'packing': '行前準備與行李',
-                'budget': '費用預算與換匯'
+                'packing': '出發行程須知'
             };
             document.getElementById('header-title').innerText = titles[tabId];
 
