@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>新加坡 6 天 5 夜 🇸🇬</title>
+<title>Singapore Journey 🇸🇬</title>
 <style>
   :root{
-    --sky-deep:#3E6FB5;
-    --sky-mid:#5B9BD9;
-    --sky-bright:#8FC6EC;
-    --pink-soft:#F7A9C4;
+    --sky-deep:#4A7CBE;
+    --sky-mid:#73ACE3;
+    --sky-bright:#A1D5F5;
+    --pink-soft:#F9BDD2;
     --pink-pale:#FDE6EF;
     --sky-pale:#EEF6FC;
     --sand:#FFFFFF;
@@ -42,9 +42,9 @@
     width:200px; height:240px; left:-30px; top:150px;
   }
   body::after{
-    /* Marina Bay Sands line art */
-    background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" fill="none" stroke="%23D9799E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M40 200V70l14-8 14 8v130"/><path d="M120 200V50l14-9 14 9v150"/><path d="M200 200V70l14-8 14 8v130"/><path d="M30 70c0 24 30 40 68 40s68-16 68-40" /><path d="M190 70c0 24 30 40 68 40s68-16 68-40"/><path d="M20 68h108M180 68h108"/><path d="M54 130h140M54 160h140M54 190h140" stroke-width="1.5" opacity="0.55"/><path d="M20 205h280" stroke-width="2"/><path d="M64 200v-70M134 200v-90M214 200v-70" stroke-width="1.5" opacity="0.5"/></svg>');
-    width:260px; height:180px; right:-40px; bottom:160px;
+    /* Supertree Grove line art */
+    background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" fill="none" stroke="%23D9799E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M130 240V130M115 240l5-70M145 240l-5-70" stroke-width="4"/><path d="M70 110c0-40 30-70 60-70s60 30 60 70c0 25-15 45-35 55H105c-20-10-35-30-35-55z" fill="white" fill-opacity="0.1"/><path d="M100 120l-20-40M160 120l20-40M110 90l-10-30M150 90l10-30M130 80V45"/><path d="M110 165h40M95 140h70M80 115h100" stroke-width="2"/><path d="M50 240h160" stroke-width="2.5"/></svg>');
+    width:220px; height:220px; right:-20px; bottom:140px;
   }
   .app-header, .day-scroller, main, .bottom-nav{position:relative; z-index:1;}
   ::-webkit-scrollbar{display:none;}
@@ -52,9 +52,9 @@
   /* ---------- Header ---------- */
   .app-header{
     position:sticky; top:0; z-index:40;
-    background:linear-gradient(135deg, var(--sky-deep), var(--sky-mid) 55%, var(--pink-soft));
+    background:linear-gradient(135deg, var(--sky-mid), var(--sky-bright) 50%, var(--pink-soft));
     color:#fff;
-    padding:14px 20px 26px;
+    padding:16px 20px 28px;
     border-radius:0 0 22px 22px;
     box-shadow:var(--shadow);
     overflow:hidden;
@@ -64,22 +64,27 @@
     content:"";
     position:absolute; right:-30px; top:-30px;
     width:160px;height:160px;border-radius:50%;
-    background:radial-gradient(circle, rgba(255,255,255,0.18), transparent 70%);
+    background:radial-gradient(circle, rgba(255,255,255,0.25), transparent 70%);
   }
   .app-header .eyebrow{
     font-size:10.5px; letter-spacing:2px; text-transform:uppercase;
-    opacity:0.85; font-weight:600;
+    opacity:0.9; font-weight:600;
+    color: rgba(255, 255, 255, 0.95);
   }
   .app-header h1{
-    margin:3px 0 3px; font-size:19px; font-weight:800; letter-spacing:0.5px;
+    margin:4px 0 6px; font-size:22px; font-weight:800; letter-spacing:0.5px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.05);
   }
   .app-header .sub{
-    font-size:12px; opacity:0.92; display:flex; gap:10px; flex-wrap:wrap; margin-top:4px;
+    font-size:12px; display:flex; gap:10px; flex-wrap:wrap; margin-top:6px;
   }
   .app-header .sub span{
-    background:rgba(255,255,255,0.16);
-    padding:3px 9px; border-radius:999px;
+    background:rgba(255,255,255,0.28);
+    color: #3E6FB5;
+    font-weight: 700;
+    padding:4px 12px; border-radius:999px;
     backdrop-filter: blur(4px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
   }
 
   /* ---------- Day pills scroller ---------- */
@@ -184,7 +189,7 @@
 
   .hotel-hero{
     border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow);
-    background:linear-gradient(135deg, var(--sky-deep), var(--sky-mid));
+    background:linear-gradient(135deg, var(--sky-mid), var(--pink-soft));
     color:#fff; padding:20px; margin-bottom:14px; position:relative;
   }
   .hotel-hero .emoji-bg{position:absolute; font-size:80px; opacity:0.12; right:-10px; top:-16px;}
@@ -216,9 +221,9 @@
 
 <header class="app-header">
   <div class="eyebrow">💙 Singapore Getaway</div>
-  <h1>新加坡 6 天 5 夜</h1>
+  <h1>Singapore Journey</h1>
   <div class="sub">
-    <span>9/24 – 9/29</span>
+    <span>6 Days • 5 Nights</span>
   </div>
 </header>
 
