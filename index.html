@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Singapore Journey 🇸🇬</title>
+<title>新加坡 6 天 5 夜 🇸🇬</title>
 <style>
   :root{
-    --sky-deep:#4A7CBE;
-    --sky-mid:#73ACE3;
-    --sky-bright:#A1D5F5;
-    --pink-soft:#F9BDD2;
+    --sky-deep:#3E6FB5;
+    --sky-mid:#5B9BD9;
+    --sky-bright:#8FC6EC;
+    --pink-soft:#F7A9C4;
     --pink-pale:#FDE6EF;
     --sky-pale:#EEF6FC;
     --sand:#FFFFFF;
@@ -43,8 +43,8 @@
   }
   body::after{
     /* Supertree Grove line art */
-    background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" fill="none" stroke="%23D9799E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M130 240V130M115 240l5-70M145 240l-5-70" stroke-width="4"/><path d="M70 110c0-40 30-70 60-70s60 30 60 70c0 25-15 45-35 55H105c-20-10-35-30-35-55z" fill="white" fill-opacity="0.1"/><path d="M100 120l-20-40M160 120l20-40M110 90l-10-30M150 90l10-30M130 80V45"/><path d="M110 165h40M95 140h70M80 115h100" stroke-width="2"/><path d="M50 240h160" stroke-width="2.5"/></svg>');
-    width:220px; height:220px; right:-20px; bottom:140px;
+    background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 260" fill="none" stroke="%23D9799E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M70 250V120c0-8 3-14 8-14s8 6 8 14v130"/><ellipse cx="78" cy="95" rx="46" ry="20"/><path d="M34 95c0-6 20-11 44-11s44 5 44 11" stroke-width="2" opacity="0.6"/><path d="M78 75V50" stroke-width="2"/><path d="M150 250V90c0-9 4-16 10-16s10 7 10 16v160"/><ellipse cx="160" cy="58" rx="58" ry="24"/><path d="M104 58c0-7 25-13 56-13s56 6 56 13" stroke-width="2" opacity="0.6"/><path d="M160 34V6" stroke-width="2"/><path d="M226 250V150c0-7 3-13 7-13s7 6 7 13v100"/><ellipse cx="233" cy="130" rx="38" ry="16"/><path d="M197 130c0-5 16-9 36-9s36 4 36 9" stroke-width="2" opacity="0.6"/><path d="M233 114V92" stroke-width="2"/><path d="M20 250h240" stroke-width="2"/></svg>');
+    width:260px; height:180px; right:-40px; bottom:160px;
   }
   .app-header, .day-scroller, main, .bottom-nav{position:relative; z-index:1;}
   ::-webkit-scrollbar{display:none;}
@@ -52,9 +52,9 @@
   /* ---------- Header ---------- */
   .app-header{
     position:sticky; top:0; z-index:40;
-    background:linear-gradient(135deg, var(--sky-mid), var(--sky-bright) 50%, var(--pink-soft));
+    background:linear-gradient(135deg, #7FA8D9, #A6C6E8 50%, #F3B8CE);
     color:#fff;
-    padding:16px 20px 28px;
+    padding:14px 20px 26px;
     border-radius:0 0 22px 22px;
     box-shadow:var(--shadow);
     overflow:hidden;
@@ -64,27 +64,22 @@
     content:"";
     position:absolute; right:-30px; top:-30px;
     width:160px;height:160px;border-radius:50%;
-    background:radial-gradient(circle, rgba(255,255,255,0.25), transparent 70%);
+    background:radial-gradient(circle, rgba(255,255,255,0.18), transparent 70%);
   }
   .app-header .eyebrow{
     font-size:10.5px; letter-spacing:2px; text-transform:uppercase;
-    opacity:0.9; font-weight:600;
-    color: rgba(255, 255, 255, 0.95);
+    opacity:0.85; font-weight:600;
   }
   .app-header h1{
-    margin:4px 0 6px; font-size:22px; font-weight:800; letter-spacing:0.5px;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    margin:3px 0 3px; font-size:19px; font-weight:800; letter-spacing:0.5px;
   }
   .app-header .sub{
-    font-size:12px; display:flex; gap:10px; flex-wrap:wrap; margin-top:6px;
+    font-size:12px; opacity:0.92; display:flex; gap:10px; flex-wrap:wrap; margin-top:4px;
   }
   .app-header .sub span{
-    background:rgba(255,255,255,0.28);
-    color: #3E6FB5;
-    font-weight: 700;
-    padding:4px 12px; border-radius:999px;
+    background:rgba(255,255,255,0.16);
+    padding:3px 9px; border-radius:999px;
     backdrop-filter: blur(4px);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
   }
 
   /* ---------- Day pills scroller ---------- */
@@ -189,7 +184,7 @@
 
   .hotel-hero{
     border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow);
-    background:linear-gradient(135deg, var(--sky-mid), var(--pink-soft));
+    background:linear-gradient(135deg, var(--sky-deep), var(--sky-mid));
     color:#fff; padding:20px; margin-bottom:14px; position:relative;
   }
   .hotel-hero .emoji-bg{position:absolute; font-size:80px; opacity:0.12; right:-10px; top:-16px;}
@@ -220,7 +215,7 @@
 <body>
 
 <header class="app-header">
-  <div class="eyebrow">💙 Singapore Getaway</div>
+  <div class="eyebrow">💙 Travel Itinerary</div>
   <h1>Singapore Journey</h1>
   <div class="sub">
     <span>6 Days • 5 Nights</span>
