@@ -143,16 +143,10 @@
   }
   .day-title::before{
     content:"";
-    position:absolute; top:-50%; left:-10%;
-    width:60%; height:90%;
-    background:radial-gradient(ellipse at top left, rgba(255,255,255,0.85), transparent 70%);
-    transform:rotate(-15deg);
+    position:absolute; top:-60%; left:-40%;
+    width:55%; height:220%;
+    background:linear-gradient(115deg, transparent 30%, rgba(255,255,255,0.95) 48%, rgba(255,255,255,0.95) 55%, transparent 70%);
     pointer-events:none;
-    animation: glareSweep 5s ease-in-out infinite;
-  }
-  @keyframes glareSweep{
-    0%, 100%{ transform:translateX(0) rotate(-15deg); opacity:0.9; }
-    50%{ transform:translateX(60px) rotate(-15deg); opacity:0.55; }
   }
   .day-title-hole{
     position:absolute; right:11px; top:50%; transform:translateY(-50%);
@@ -178,7 +172,7 @@
     background:linear-gradient(var(--sky-bright), var(--line));
     border-radius:2px;
   }
-  .item{position:relative; margin-bottom:16px;}
+  .item{position:relative; margin-bottom:16px; opacity:0; animation: itemRise .9s ease forwards;}
   .item::before{
     content:""; position:absolute; left:-26px; top:4px;
     width:12px; height:12px; border-radius:50%;
@@ -186,6 +180,10 @@
   }
   .item.meal::before{border-color:var(--coral);}
   .item.transit::before{border-color:#9AA7B4; width:9px; height:9px; left:-24.5px; top:5px;}
+  @keyframes itemRise{
+    from{ opacity:0; transform:translateY(16px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
   .card{
     background:#fff; border-radius:var(--radius); padding:13px 14px;
     box-shadow:var(--shadow); border:1px solid var(--line);
@@ -414,9 +412,10 @@ function renderDay(id){
   let html = `<div class="day-title"><h2>${d.title}</h2><span class="day-title-hole"></span></div>`;
   if(d.note){ html += `<div class="day-note">${d.note}</div>`; }
   html += `<div class="timeline">`;
-  d.items.forEach(item=>{
+  d.items.forEach((item, idx)=>{
+    const delay = Math.min(idx * 0.1, 1).toFixed(2);
     if(item.type==="transit"){
-      html += `<div class="item transit"><div class="card">${item.text}</div></div>`;
+      html += `<div class="item transit" style="animation-delay:${delay}s"><div class="card">${item.text}</div></div>`;
       return;
     }
     const chips = (item.chips||[]).map(c=>{
@@ -424,7 +423,7 @@ function renderDay(id){
       return `<span class="${cls}">${c}</span>`;
     }).join("");
     html += `
-      <div class="item ${item.meal ? "meal":""}">
+      <div class="item ${item.meal ? "meal":""}" style="animation-delay:${delay}s">
         <div class="card">
           <div class="time">${iconFor(item)}  ${item.time}</div>
           <h3>${item.title}</h3>
@@ -480,7 +479,7 @@ document.getElementById("hotelView").innerHTML = `
   </div>
 
   <div class="section-block">
-    <h3>📅 入住資訊</h3>
+    <h3>🗓️ 入住資訊</h3>
     <p><b>入住：</b>9/24（四）約 15:15</p>
     <p><b>退房：</b>9/29（二）約 09:30</p>
     <p><b>共：</b>5 晚</p>
@@ -489,11 +488,6 @@ document.getElementById("hotelView").innerHTML = `
   <div class="section-block">
     <h3>📍 周邊亮點</h3>
     <p>步行可達 Keong Saik Road、Ann Siang Hill、Maxwell Food Centre、Amoy Street Food Centre，牛車水核心區域近在咫尺，晚上散步也很安全愜意。</p>
-  </div>
-
-  <div class="section-block">
-    <h3>🛂 領務小提醒</h3>
-    <p>駐新加坡台北代表處：460 Alexandra Road #23-00 mTower Building（Labrador Park 站）。送件 09:00-11:30，取件 13:30-16:00，僅平日開放，請留意行程安排（Day 2）。</p>
   </div>
 `;
 
